@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Talami, lugar de gente amable</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=44220" rel="stylesheet" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
+    <script src="js/main.js?v=44220" type="text/javascript"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
+    <!--mapbox-->
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo header__logo--color"><a href="index.html"><img src="img/icons/logo-talami.svg"></a></div>
+            <div class="header__logo header__logo--white"><a href="index.html"><img src="img/icons/logo-talami-white.svg"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__bar">
+                  <div class="header__logo"><a href="index.html"><img src="img/icons/logo-talami.svg"></a></div>
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="infraestructura.html">Infraestructura</a></li>
+                    <li><a href="reglamentacion.html">Reglamentación</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                  </ul>
+                  <div class="header__button"> <a href="#" class="btn">Gastos comunes</a></div>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item"><a href="#" class="btn btn--transparent">Gastos comunes</a></div>
+              <div class="header__item"><a href="contact.html" class="btn btn--transparent">Contacto</a></div>
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__bg"> 
+          <div class="bg"> <img src="img/uploads/3.jpeg"></div>
+        </div>
+        <div class="section__wrap section__wrap--header">
+          <div class="section__content"> 
+            <h1 class="section__title">Reglamentación</h1>
+            <p class="section__description">Integer nullam curabitur aenean vehicula lacinia praesent cras aenean ante nec pretium ultrices proin eleifend.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section--docs"> 
+        <div class="section__wrap"> 
+          <div class="section__body"> 
+            <div class="cols"> 
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento de copropiedad y sus modificaciones </a></h4>
+                    <p class="article__description">Hendrerit eros nam primis est varius eu dictumst curae posuere torquent leo.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento Covid 19</a></h4>
+                    <p class="article__description">Venenatis in ullamcorper ullamcorper urna est nec orci suspendisse eget commodo cursus.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento de seguridad</a></h4>
+                    <p class="article__description">Sapien etiam vulputate cubilia lectus etiam vehicula luctus colus tristique hac congue.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento Ingreso condominio</a></h4>
+                    <p class="article__description">Turpis faucibus et platea at nam iaculis senectus nec cras nunc vestibulum.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento de copropiedad y sus modificaciones </a></h4>
+                    <p class="article__description">A pretium nisi proin sapien aliquam quisque senectus feugiat faucibus ultrices pretium.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento Covid 19</a></h4>
+                    <p class="article__description">Ac conubia himenaeos pretium eros lobortis magna tristique fermentum etiam tempor luctus.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento de seguridad</a></h4>
+                    <p class="article__description">Vitae vestibulum feugiat non tellus egestas maecenas porttitor venenatis commodo diam at.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento Ingreso condominio</a></h4>
+                    <p class="article__description">Adipiscing facilisis laoreet tempor vestibulum habitasse vel nostra sed nibh sem consequat.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento de copropiedad y sus modificaciones </a></h4>
+                    <p class="article__description">Dictum bibendum vel sagittis aliquam lacus class at iaculis aenean mi nulla.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento Covid 19</a></h4>
+                    <p class="article__description">Aliquam accumsan nisl maecenas porta consequat ullamcorper scelerisque elementum praesent lacinia tempor.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento de seguridad</a></h4>
+                    <p class="article__description">Cubilia felis etiam rutrum vivamus molestie eros mollis class cursus habitant magna.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+              <div class="col-md-6"> 
+                <article class="article--doc"> 
+                  <div class="article__body"> 
+                    <h4 class="article__title"><a href="#">Reglamento Ingreso condominio</a></h4>
+                    <p class="article__description">Ac libero lacinia facilisis nulla metus nulla est risus fames quis habitasse.
+                    </p>
+                  </div>
+                  <div class="article__icon"> <img src="img/icons/word.svg"></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--payment">
+        <div class="section__bg">
+          <div class="bg"> <img src="img/uploads/9.jpeg"></div>
+        </div>
+        <div class="section__wrap"> 
+          <div class="section__content dscroll">
+            <div class="section__logo"> <img src="img/icons/logo-comunidad-feliz.svg"></div>
+            <h3 class="section__title">Paga aquí tus gastos comunes</h3>
+            <p class="section__description">Venenatis arcu fringilla ut quam nam lectus ligula vehicula laoreet. Colus porttitor ultricies pulvinar facilisis porta vehicula varius vestibulum hac. Ut vel convallis praesent iaculis ullamcorper eros justo id tincidunt ornare aptent venenatis quisque ante.
+            </p><a href="#" class="btn">Pagar aquí</a>
+          </div>
+        </div>
+      </section>
+      <div class="modal modal--register">
+        <div class="modal__back"></div>
+        <div class="modal__front">
+          <div class="modal__box">
+            <div class="modal__close"><span class="fa fa-close">	</span></div>
+            <div class="modal__content">
+              <h3 class="modal__title">Registrarse</h3>
+              <p class="modal__description">Tortor quam molestie volutpat pellentesque lobortis curae luctus eros sociosqu nibh at mi cubilia tempor.
+              </p>
+              <div class="modal__form">
+                <form class="form form--register">
+                  <div class="cols">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form__element">
+                        <div class="form__title">Rut</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form__element">
+                        <div class="form__title">Nombre</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form__element">
+                        <div class="form__title">Apellido</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form__element">
+                        <div class="form__title">Email</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form__element">
+                        <div class="form__title">Teléfono</div>
+                        <div class="form__input">
+                          <input type="text" name="#" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form__element">
+                        <div class="form__title">Género</div>
+                        <div class="form__input">
+                          <select name="#" required>
+                            <option value="#">Masculino</option>
+                            <option value="#">Femenino</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="form__button">
+                        <button class="btn">Registrar<span class="fa fa-pencil"></span></button>
+                      </div>
+                      <div class="form__alert"><span></span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrap">
+        <div class="cols">
+          <div class="footer__flex">
+            <div class="col-xs-12 col-md-3">
+              <div class="footer__info">
+                <div class="footer__logo"><img src="img/icons/logo-talami-white.svg"></div>
+                <p class="footer__description">Ultrices eget etiam tellus quis hendrerit ut blandit elementum conubia torquent feugiat taciti semper mauris.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+              <div class="footer__nav"> 
+                <ul> 
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Infraestructura</a></li>
+                  <li><a href="#">Reglamentación</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+              <div class="footer__nav"> 
+                <ul> 
+                  <li><a href="#">Actividades</a></li>
+                  <li><a href="#">Galería</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-5">
+              <div data-lng="-71.4655861" data-lat="-34.1487288" class="footer__map footer--map">
+                <div class="footer__map__map">
+                  <div id="map"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="footer__down">
+              <div class="cols">
+                <div class="footer__flex">
+                  <div class="col-xs-12 col-md-4">
+                    <div class="footer__links">
+                      <div class="footer__link"><a href="#">Políticas de privacidad</a></div>
+                      <div class="footer__link"><a href="#">Términos y condiciones</a></div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <div class="footer__socials">
+                      <div class="footer__social"><a href="#"><span class="fa fa-facebook"></span></a></div>
+                      <div class="footer__social"><a href="#"><span class="fa fa-instagram"></span></a></div>
+                      <div class="footer__social"><a href="#"><span class="fa fa-linkedin"></span></a></div>
+                      <div class="footer__social"><a href="#"><span class="fa fa-twitter"></span></a></div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                    <div class="footer__copyright">
+                      <div class="footer__text">© Copyright 2021 - Talami. Todos los derechos reservados</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
